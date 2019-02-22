@@ -1,0 +1,13 @@
+Domínio
+Servidor
+HTML - Hyper Text Markup Language
+
+Comandos HTML   / TAG's HTML
+<tag> </tag>
+
+SEO - Search Engine Optimization 
+
+html / body / title / head / meta / br / hr / h1 / h2 / h3 / img / a /
+
+gutoffline@gmail.com
+guto.rxavier@sp.senac.br
