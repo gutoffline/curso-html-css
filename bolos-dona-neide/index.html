@@ -4,30 +4,128 @@
 		<title>Bolos Dona Neide</title>
 		<!-- conjunto de caracteres com acentuação -->
 		<meta charset="utf-8">
+		<style>
+		body{
+			margin-top:0;
+			font-family: "Segoe UI";
+		}
+		
+		header{
+			background-color: #842835;
+			color: #ffffff;
+			width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0;
+			text-align: center;
+		}
+		
+		h2{
+			color: #842835;
+			margin-bottom: 0;
+			font-family: arial;
+		}
+		
+		.bolo-pequeno{
+			width: 100px;
+			border: 1px solid #444444;
+			padding-left: 4px;
+			padding-right: 4px;
+			padding-top: 4px;
+			padding-bottom: 4px;
+			background-color: #ececec
+		}
+		
+		.bolo-pequeno:hover{
+			border: 1px solid red;
+		}
+		
+		.logo-cabecalho{
+			width: 120px;
+		}
+		
+		.logo-rodape{
+			width: 80px;
+		}
+		
+		nav{
+			text-align: center;
+		}
+		
+		main{
+			text-align: center
+		}
+		
+		footer{
+			color:white;
+			background-color: #842835;
+		}
+		
+		.redes-sociais-rodape{
+			width: 100px;
+			float: right;
+			margin-top: -90px;
+		}
+		
+		.letra-branca{
+			color: white;
+		}
+		</style>
 	</head>
 	<body>
-		<!-- o alt da imagem serve como texto de descrição -->
-		<img src="imagens/bolo.png" alt="Bolos Dona Neide">
-		<h1 title="Meu Site">Bolos Dona Neide</h1>
+		<header>
+			<!-- o alt da imagem serve como texto de descrição -->
+			<img src="imagens/bolo.png" alt="Bolos Dona Neide" class="logo-cabecalho">
+			<h1 title="Meu Site">Bolos Dona Neide</h1>
+			
+			<a href="http://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Página do Facebook" title="facebook.com/bolos"></a>
+			
+			<a href="http://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram" title="instagram.com/bolos"></a>
+			
+			<a href="http://youtube.com" target="_blank"><img src="imagens/youtube.png" alt="YOUTUBE" title="Canal dos Bolos"></a> <br>
+		</header>
 		
-		<img src="imagens/facebook.png" alt="Página do Facebook" title="facebook.com/bolos">
-		<img src="imagens/instagram.png" alt="Instagram" title="instagram.com/bolos">
-		<img src="imagens/youtube.png" alt="YOUTUBE" title="Canal dos Bolos"> <br>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="#">Orçamento</a>
+			<a href="#">Eventos</a>
+		</nav>
 		
-		<a href="index.html">Home</a>
-		<a href="#">Orçamento</a>
-		<a href="#">Eventos</a>
+		<main>
+			<h2>Bolos</h2>
+			<img src="imagens/bolo1.jpg" alt="Bolo Confeitado 1" class="bolo-pequeno">
+			<img src="imagens/bolo2.jfif" alt="Bolo Confeitado 2" class="bolo-pequeno">
+			<img src="imagens/bolo3.jpg" alt="Bolo Confeitado 3" class="bolo-pequeno">
+			<img src="imagens/bolo4.jfif" alt="Bolo Confeitado 4" class="bolo-pequeno"><br>
+			<img src="imagens/bolo5.jpg" alt="Bolo Confeitado 5" class="bolo-pequeno">
+			<img src="imagens/bolo6.jpg" alt="Bolo Confeitado 6" class="bolo-pequeno">
+			
+			<h2>Últimos Eventos</h2>
+			<img src="imagens/eventos1.jpg" alt="Casamento">
+			<img src="imagens/eventos2.jfif" alt="Aniversário">
+			
+			<h2>Dúvidas</h2>
+			<form action="envio-mensagem.html" id="formulario-envio" name="formulario-envio">
+				Nome:<input type="text" id="nome" name="nome" required>
+				E-mail:<input type="text" id="email" name="email" required>
+				Dúvida:<input type="text" id="duvida" name="duvida" required>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Limpar">
+			</form>
+		</main>
 		
-		<h2>Bolos</h2>
-		<img src="imagens/bolo1.jpg" alt="Bolo Confeitado 1">
-		<img src="imagens/bolo2.jfif" alt="Bolo Confeitado 2">
-		<img src="imagens/bolo3.jpg" alt="Bolo Confeitado 3">
-		<img src="imagens/bolo4.jfif" alt="Bolo Confeitado 4"><br>
-		<img src="imagens/bolo5.jpg" alt="Bolo Confeitado 5">
-		<img src="imagens/bolo6.jpg" alt="Bolo Confeitado 6">
-		
-		<h2>Últimos Eventos</h2>
-		<img src="imagens/eventos1.jpg" alt="Casamento">
-		<img src="imagens/eventos2.jfif" alt="Aniversário">
+		<footer>
+			<p>
+				<img src="imagens/bolo.png" alt="Bolos Dona Neide" class="logo-rodape">
+				<b>Bolos</b> <em>Dona Neide</em>
+			</p>
+			<ul class="redes-sociais-rodape">
+				<li><a href="http://facebook.com" target="_blank" class="letra-branca"> Facebook</a></li>
+				<li><a href="http://instagram.com" target="_blank" class="letra-branca">Instagram</a></li>
+				<li><a href="http://youtube.com" target="_blank" class="letra-branca">Youtube</a></li>
+			</ul>
+		</footer>
 	</body>
 </html>
+
+
