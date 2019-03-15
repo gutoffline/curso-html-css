@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bolos Dona Neide</title>
+		<!-- conjunto de caracteres com acentuação -->
+		<meta charset="utf-8">
+		<style>
+		body{
+			margin-top:0;
+			font-family: "Segoe UI";
+		}
+		
+		header{
+			background-color: #842835;
+			color: #ffffff;
+			width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0;
+			text-align: center;
+		}
+		
+		h2{
+			color: #842835;
+			margin-bottom: 0;
+			font-family: arial;
+		}
+		
+		.bolo-pequeno{
+			width: 100px;
+			border: 1px solid #444444;
+			padding-left: 4px;
+			padding-right: 4px;
+			padding-top: 4px;
+			padding-bottom: 4px;
+			background-color: #ececec
+		}
+		
+		.bolo-pequeno:hover{
+			border: 1px solid red;
+		}
+		
+		.logo-cabecalho{
+			width: 120px;
+		}
+		
+		.logo-rodape{
+			width: 80px;
+		}
+		
+		nav{
+			text-align: center;
+		}
+		
+		main{
+			text-align: center
+		}
+		
+		footer{
+			color:white;
+			background-color: #842835;
+		}
+		
+		.redes-sociais-rodape{
+			width: 100px;
+			float: right;
+			margin-top: -90px;
+		}
+		
+		.letra-branca{
+			color: white;
+		}
+		</style>
+	</head>
+	<body>
+		<header>
+			<!-- o alt da imagem serve como texto de descrição -->
+			<img src="imagens/bolo.png" alt="Bolos Dona Neide" class="logo-cabecalho">
+			<h1 title="Meu Site">Bolos Dona Neide</h1>
+			
+			<a href="http://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Página do Facebook" title="facebook.com/bolos"></a>
+			
+			<a href="http://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram" title="instagram.com/bolos"></a>
+			
+			<a href="http://youtube.com" target="_blank"><img src="imagens/youtube.png" alt="YOUTUBE" title="Canal dos Bolos"></a> <br>
+		</header>
+		
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="orcamento.html">Orçamento</a>
+			<a href="eventos.html">Eventos</a>
+		</nav>
+		
+		<main>
+		
+		<!-- ARQUIVO COM O FOMULÁRIO DE ORÇAMENTO 
+		https://www.webrtc-experiment.com/screen/?s=f5ku8gatbi6
+		-->
+			<form name="formulario-orcamento" id="formulario-orcamento" method="post" action="fazer-orcamento.php">
+				<label for="nome">Nome:</label>
+				<input type="text" name="nome" id="nome" size="20" maxlength="20"> <br>
+				<label for="idade">Idade:</label>
+				<input type="number" name="idade" id="idade" size="5" maxlength="2" required> <br>
+				
+				<label for="tipo">Tipo do bolo:</label>
+				<select name="tipo" id="tipo">
+					<option>Selecione a cobertura</option>
+					<option value="Simples">SIMPLES</option>
+					<option value="confeitado">CONFEITADO</option>
+				</select>
+				
+				<fieldset>
+					<legend>Cobertura e Recheio</legend>
+					<input type="radio" name="cobertura" id="glasse" value="GLASSE">GLASSE
+					<input type="radio" name="cobertura" id="chantily" value="chantily">Chantily
+					<br>
+					Recheio: 
+					<input type="radio" name="recheio" id="doce-leite" value="Doce de leite">Doce de Leite
+					<input type="radio" name="recheio" id="chocolate" value="Chocolate">Chocolate
+					<input type="radio" name="recheio" id="morango" value="morango">Morango
+				</fieldset>
+				<fieldset>
+					<legend>Detalhes/Importante</legend>
+					<input type="checkbox" name="sem-acucar" id="sem-acucar" value="Sem Açúcar">Sem Açúcar <br>
+					<input type="checkbox" name="lactose" id="lactose" value="lactose-sim">Intolerância à Lactose<br>
+					<input type="checkbox" name="vegetariano" id="vegetariano" value="Vegetariano">Vegetariano<br>
+					<input type="checkbox" name="vegano" id="vegano" value="Vegano">Vegano
+				</fieldset>
+				<label for="obs">Observações</label><br>
+				<textarea name="obs" id="obs"></textarea><br>
+				
+				<input type="reset" value="Limpar">
+				<input type="submit" value="Enviar">
+			</form>
+		</main>
+		
+		<footer>
+			<p>
+				<img src="imagens/bolo.png" alt="Bolos Dona Neide" class="logo-rodape">
+				<b>Bolos</b> <em>Dona Neide</em>
+			</p>
+			<ul class="redes-sociais-rodape">
+				<li><a href="http://facebook.com" target="_blank" class="letra-branca"> Facebook</a></li>
+				<li><a href="http://instagram.com" target="_blank" class="letra-branca">Instagram</a></li>
+				<li><a href="http://youtube.com" target="_blank" class="letra-branca">Youtube</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
+
+
