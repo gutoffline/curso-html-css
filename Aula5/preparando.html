@@ -5,26 +5,57 @@
 		<title>Preparando-se para utilizar o HTML5</title>
 		<meta charset="utf-8">
 		<style>
-		table{
-			border: 3px dotted red;
-		}
 		
-		td{
-			border: 1px solid black;
-		}
-		
-		th{
-			border: 1px solid black;
-		}
+			.fundo-amarelo{
+				background-color: yellow;
+			}
+			
+			.titulo{
+				font-family: cursive;
+				color: white;
+				background-color: fuchsia;
+				text-align:center;
+			}
+			
+			strong{
+				color:red;
+			}
+			
+			em{
+				color: green;
+				background-color: tan;
+				border: 2px red solid;
+				margin: 5px;
+			}
+			
+			.destaque{
+				color: brown;
+				font-weight: bold;
+			}
+			
+			.tabela-html{
+				border: 5px double blue;
+				width: 300px;
+				text-align: center;
+			}
+			
+			td{
+				border: 1px solid red;
+			}
+			
+			th{
+				border: 1px solid red;
+				background-color: #ececec;
+			}
 		
 		</style>
 	</head>
 	<body>
-		<h2>Preparando-se para utilizar o HTML5</h2>
-		<p>HTML é uma linguagem utilizada para descrever páginas web, também conhecida como uma linguagem de marcação, pois sua estrutura é descrita por uma série de tags(marcas).</p>
-		<p>Veja as versões do HTML:</p>
+		<h2 class="titulo">Preparando-se para utilizar o HTML5</h2>
+		<p class="fundo-amarelo"><strong>HTML</strong> é uma linguagem utilizada para descrever páginas <em>web</em>, também conhecida como uma <span class="destaque">linguagem de marcação</span>, pois sua estrutura é descrita por uma série de <em>tags</em>(marcas).</p>
+		<p>Veja as versões do <strong>HTML</strong>:</p>
 		
-		<table> <!-- aqui começa a tabela -->
+		<table class="tabela-html"> <!-- aqui começa a tabela -->
 			<tr> <!-- cada tr é uma linha nova -->
 				<th>Versão</th> <!-- th é a coluna de título -->
 				<th>Ano</th>
@@ -37,8 +68,40 @@
 				<td>HTML+</td>
 				<td>1993</td>
 			</tr><!-- continue a tabela até html5 -->
+			<tr>
+				<td>HTML 2.0</td>
+				<td>1995</td>
+			</tr>
+			<tr>
+				<td>HTML 3.2</td>
+				<td>1997</td>
+			</tr>
+			<tr>
+				<td>HTML 4.01</td>
+				<td>1999</td>
+			</tr>
+			<tr>
+				<td>XHTML</td>
+				<td>2000</td>
+			</tr>
+			<tr>
+				<td>HTML5</td>
+				<td>2012</td>
+			</tr>
 		</table>
+		<p>
+			<a href="menu.html">Voltar</a>
+		</p>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
 				
 				
